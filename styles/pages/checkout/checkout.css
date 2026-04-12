@@ -32,6 +32,25 @@
   align-items: start;
 }
 
+/* Initially hide the input and save link */
+.quantity-input,
+.save-quantity-link {
+  display: none;
+}
+
+/* When editing, show the input and save link */
+.is-editing-quantity .quantity-input,
+.is-editing-quantity .save-quantity-link {
+  display: inline-block;
+  width: 40px;
+}
+
+/* When editing, hide the "Quantity: X" and "Update" link */
+.is-editing-quantity .quantity-label,
+.is-editing-quantity .update-quantity-link {
+  display: none;
+}
+
 @media (max-width: 1000px) {
   .main {
     max-width: 500px;
