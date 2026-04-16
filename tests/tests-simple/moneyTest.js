@@ -1,4 +1,4 @@
-import { formatCurrency } from "../scripts/utils/money.js";
+import { formatCurrency } from "../../../scripts/utils/money.js";
 
 
 const price = formatCurrency(2095);
